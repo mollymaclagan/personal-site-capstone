@@ -1,0 +1,774 @@
+/* Elements */
+h1, h2, h3{
+    font-family: "Marcellus", serif;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    color: navy;
+}
+
+a{
+    color: navy;
+}
+
+h1{
+    font-size: 4.25rem;
+}
+
+h2{
+    font-size: 3.25rem;
+}
+
+h3{
+    font-size: 2.25rem;
+}
+
+button{
+    font-family: "Raleway", sans-serif;
+    border: none;
+    padding: .5em;
+    border-radius: 10%;
+    color: navy;
+    background-color: white;
+    border: 1px navy solid;
+    width: 7rem;
+}
+
+img{
+    border-radius: 10%;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+@media(max-width: 767px){
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 635px){
+    h1{
+        font-size: 2.25rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+    }
+
+    h3{
+        font-size: 1.25rem;
+    }
+
+    button{
+        width: 5rem
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 432px){
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    h2{
+        font-size: 1.25rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    button{
+        width: 3.5rem;
+    }
+
+    p{
+        font-size: .75rem;
+    }
+}
+
+/* General Classes and Shared Classes */
+.secondary-text{
+    font-size: 1.25rem;
+}
+
+.overview{
+    font-size: 1.75rem;
+}
+
+.intro, .summary, .skills, .connect, .about-main, .professional-details{
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+}
+
+.intro .headshot > img, .skills .headshot > img, .about-main .headshot > img,
+.professional-details .headshot > img, .interests-intro .headshot > img{
+    height: 250px;
+    border-radius: 10%;
+}
+
+@media(max-width: 767px){
+    .overview {
+        font-size: 1.5rem;
+    }
+
+    .intro, .summary, .skills, .about-main{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .buttons > button{
+        margin-top: .5rem;
+    }
+
+    .secondary-text{
+        font-size: .75rem;
+    }
+}
+
+@media(max-width: 635px){
+    .overview{
+        font-size: 1rem;
+    }
+
+    .intro, .summary, .skills, .about-main{
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+    }
+
+    button{
+        font-size: .75rem;
+    }
+    /* Play w breakpoint for Galaxy fold (~1% of market share) */
+}
+
+@media(max-width: 432px){
+    .overview{
+        font-size: .75rem;
+    }
+
+    button{
+        font-size: .5rem;
+    }
+}
+
+/* Navbar */
+.header img{
+    float: left;
+    padding-right: .5rem;
+    margin-top: .25rem;
+    height: 1.5rem;
+}
+
+.header p{
+    font-family: "Marcellus", serif;
+    font-size: 1.5rem;
+}
+
+.navbar{
+    justify-content: space-evenly;
+    margin: none;
+}
+
+@media (max-width: 767px){
+    .brand{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar{
+        padding-bottom: 2em;
+    }
+}
+
+@media (max-width: 432px){
+    .brand > p{
+        font-size: 1rem;
+    }
+
+    .brand > img{
+        height: 1rem;
+    }
+
+    .navbar{
+        font-size: .75em;
+    }
+}
+
+@media (max-width: 302px){
+    .navbar{
+        font-size: .5em;
+    }
+    
+    .brand > p{
+        font-size: .75rem;
+    }
+
+    .brand > img{
+        height: .75rem;
+    }
+
+}
+
+/* Footer */
+
+
+@media (max-width: 432px){
+    .footer{
+        font-size: .75rem;
+    }
+}
+
+/* Styling for index.html */
+
+/* Intro */
+.intro .fussy{
+    display: grid;
+    width: 75%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: .5fr 1fr;
+}
+
+.intro .headshot{
+    grid-row-start: span 2;
+    padding-left: 2em;
+}
+
+.click-me{
+    color: white;
+    background-color: navy;
+}
+
+.button-container{
+    width: 75%;
+}
+
+.intro .overview{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px){
+    .intro-headline{
+        display: flex;
+        align-items: center;
+    }
+
+    .intro .headshot{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 635px){
+    .intro .headshot{
+        grid-column-start: 2;
+    }
+
+    .intro .headshot > img{
+        height: 175px;
+
+    }
+}
+
+@media (max-width: 432px){
+    .intro .headshot > img{
+        height: 125px;
+    }
+}
+
+/* Summary */
+.summary > .container{
+    display: grid;
+    width: 75%;
+    grid-template-rows: .25fr 1fr;
+    grid-template-columns: 1fr .5fr;
+}
+
+.summary-headline{
+    grid-column-start: span 2;
+}
+
+.summary .overview{
+    grid-column-start: span 2;
+}
+
+.summary .buttons{
+    padding-top: 1.25rem;
+}
+
+@media(max-width:767px){
+    .summary .buttons{
+        padding-top: 0px;
+    }
+}
+
+/* Skills */
+.skills .fussy{
+    display: grid;
+    width: 75%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: .25fr 1fr;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.skills-headline{
+    display: flex;
+    align-items: center;
+}
+
+.skills .headshot{
+    grid-row-start: span 2;
+    padding-right: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.skills .buttons{
+    grid-column-start: 2;
+}
+
+@media(max-width: 1100px){
+    .skills-headline{
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 767px){
+    .skills-headline{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .skills .headshot{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 635px){
+.intro .headshot{
+        grid-column-start: 2;
+    }
+
+    .skills .headshot > img{
+        height: 175px;
+        /* Play with top alignment at this breakpoint. */
+    }
+}
+
+@media (max-width: 432px){
+    .skills{
+        padding-top: 0px;
+    }
+    
+    .skills .headshot > img{
+        height: 125px;
+    }
+}
+
+/* Connect */
+.connect > .container{
+    width: 75%;
+    padding-top: 1rem;
+}
+
+.linkedin{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.contact-details{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.connect .icon > img{
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.connect a > img{
+    height: 1.5rem;
+}
+
+.contact-details a {
+    font-size: 1.5rem;
+}
+
+@media(max-width: 767px){
+    .contact a{
+        font-size: 1rem;
+    }
+
+    .icon{
+        margin-top: 1.5rem;
+    }
+
+    .connect .icon > img{
+        margin-bottom: .5rem;
+    }
+}
+
+@media(max-width: 635px){
+    .connect a {
+        font-size: .75rem;
+    }
+
+    .connect a > img{
+        height: 1rem;
+    }
+
+    .connect .icon > img{
+        height: 1.75rem;
+        margin-bottom: 0px;
+    }
+
+    .contact-details{
+        padding-top: .5rem;
+    }
+}
+
+@media(max-width: 432px){
+    .connect{
+        padding-top: 1rem;
+    }
+
+    .connect a > img{
+        height: .5rem;
+    }
+
+    .connect .icon > img{
+        height: 1.25rem;
+    }
+}
+
+/* Styling for about.html */
+
+/* Galaxy fold adjustments needed for whole page */
+
+/* Page */
+.page{
+    width: 100%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+@media(max-width: 432px){
+    .page{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+/* About Me */
+.about-main > .container{
+    width: 80%;
+    margin-right: 1rem;
+    margin-left: 5rem;
+}
+
+.about-main .about-headline{
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-main .headshot > img{
+    float: left;
+    margin-right: 1rem;
+    margin-top: .75rem;
+}
+
+@media(max-width: 1100px){
+    .about-main{
+        width: 85%;
+    }
+}
+
+@media(max-width: 864px){
+    .about-main .headshot > img{
+        height: 175px;
+    }
+
+    .about-headline > h1{
+        font-size: 3.25rem;
+    }
+}
+
+@media(max-width: 767px){
+    .about-main{
+        width: 100%;
+    }
+
+    .about-headline > h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 635px){
+    .about-headline > h1{
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 432px){
+    .about-main .headshot > img{
+        height: 125px;
+    }
+
+    .about-headline > h1{
+        font-size: 1.25rem;
+    }
+}
+
+/* Fun Facts */
+.fun-facts{
+    background-color: aliceblue;
+    padding: 2rem;
+    padding-left: .75rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.fun-facts ul{
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+
+@media(max-width: 865px){
+    .fun-facts > h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 767px){
+    .fun-facts{
+        padding: 1.25rem;
+        padding-left: 0px;
+        margin-top: 1rem;
+        margin-right: .5rem;
+    }
+}
+
+@media(max-width: 635px){
+    .fun-facts > h2{
+        font-size: 1.75rem;
+    }
+
+    .fun-facts ul{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 432px){
+    .fun-facts > h2{
+        font-size: 1rem;
+    }
+
+    .fun-facts > .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        align-content: center;
+        padding-left: 4rem;
+    }
+
+    .fun-facts ul{
+        font-size: .75rem;
+    }
+}
+
+/* Professional Details */
+.professional-details{
+    padding-right: 0px;
+    padding-top: 4rem;
+}
+
+.professional-details .overview{
+    padding-bottom: 2rem;
+}
+
+.professional-details > .container{
+    width: 80%;
+    margin-right: 1rem;
+    margin-left: 5rem;
+}
+
+.statement > p{
+    font-family: "Marcellus", serif;
+    font-size: 1.75rem;
+    padding-top: 1rem;
+}
+
+.professional-details .headshot > img{
+    float: left;
+    margin-right: 1rem;
+}
+
+.professional-statement{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.prof-statement-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prof-background{
+    padding-top: 2rem;
+}
+
+@media(max-width: 1100px){
+    .statement > p{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 767px){
+    .statement > p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 635px){
+
+    .professional-details .headshot > img{
+        height: 175px;
+    }
+
+    .professional-details .headshot{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 432px){
+    .professional-details{
+        padding-top: .75rem;
+    }
+
+    /* Double-check padding at smaller widths for all sections */
+
+    .professional-details .headshot > img{
+        height: 125px;
+    }
+
+    .statement > p{
+        font-size: .75rem;
+    }
+
+    .professional-details .overview{
+       margin-right: 1rem;
+    }
+
+    .prof-background > p{
+        margin-right: 1rem;
+    }
+}
+
+
+/* Personal Interests */
+.personal-interests{
+    background-color: aliceblue;
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    margin-right: 1rem;
+}
+
+.personal-interests .headshot > img{
+    float: right;
+    margin-left: 1rem;
+}
+
+.interests-intro{
+    margin-top: 2rem;
+}
+
+.communities-table{
+    border: solid navy;
+}
+
+td{
+    padding: 1rem;
+}
+
+.communities-table tr{
+    border: solid navy;
+}
+
+@media (max-width: 1100px) {
+    .personal-interests .headshot > img{
+        float: none;
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 432px){
+    .personal-interests > .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        align-content: center;
+        padding-left: 2rem;
+    }
+
+    .personal-interests{
+        margin-right: .5rem;
+    }
+
+    .personal-interests .headshot > img{
+        height: 125px;
+    }
+
+    .communities-table{
+        font-size: .75rem;
+    }
+}
+
+/* Under Construction */
+.under-construction{
+    margin-top: 3rem;
+    height: 80vh;
+}
+
+.under-construction .card{
+    margin-top: 2rem;
+}
+
+.under-construction > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
