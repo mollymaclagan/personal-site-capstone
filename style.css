@@ -1,10 +1,11 @@
 /* Elements */
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6{
     font-family: "Marcellus", serif;
 }
 
 body{
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
+
     color: navy;
 }
 
@@ -114,7 +115,7 @@ p{
     font-size: 1.75rem;
 }
 
-.intro, .summary, .skills, .connect, .about-main, .professional-details{
+.intro, .summary, .skills, .connect, .about-main, .professional-details, .resume{
     padding-bottom: 2rem;
     padding-top: 5rem;
 }
@@ -753,6 +754,98 @@ td{
 
     .communities-table{
         font-size: .75rem;
+    }
+}
+
+/* Résumé */
+
+.testing{
+    background-color: lightgrey;
+}
+
+.name{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.name > h1{
+    margin-bottom: 0px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.contact > p > span{
+    font-family: "Marcellus", serif;
+}
+
+.letters{
+    font-size: 2.25rem;
+}
+
+.column{
+    padding-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.work-history li{
+    font-size: 1rem;
+}
+
+.employment-dates{
+    margin-bottom: 0px;
+    font-size: 1.25rem;
+}
+
+.job-title{
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.systems{
+    list-style: none;
+}
+
+.resume span{
+    font-style: normal;
+}
+
+@media(max-width: 767px){
+    .letters{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:635px){
+    .letters{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 432px){
+    .letters{
+        font-size: 1rem;
+    }
+
+    .resume > .name{
+        align-items: center;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testing{
+        margin-left: 1.5rem;
     }
 }
 
